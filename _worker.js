@@ -1784,7 +1784,7 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, fak
             } else {
                 const response = await fetch(url, {
                     headers: {
-						'User-Agent': 'v2rayN' + atob('IENGLVdvcmtlcnMtZWRnZXR1bm5lbC9jbWxpdQ==')
+                        'User-Agent': 'Mozilla/5.0' + atob('IENGLVdvcmtlcnMtZWRnZXR1bm5lbC9jbWxpdQ==')
                     }
                 });
                 content = await response.text();
@@ -4568,4 +4568,3 @@ async function nginx() {
 	`
     return text;
 }
-
